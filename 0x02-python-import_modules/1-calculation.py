@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    """Display the addition, subtraction, multiplication, and division results of values a and b."""
+    """Display the add, sub, mul, and div results of values a and b."""
     from calculator_1 import add, sub, mul, div
 
     a = 10
