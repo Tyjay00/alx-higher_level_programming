@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# The function checks whether the index is valid 
+# The function checks whether the index is valid
 
 def new_in_list(my_list, idx, element):
     """Replace an element in a list at a specific position."""
