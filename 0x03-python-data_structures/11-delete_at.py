@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# This code effectively deletes an item at a specified index from a list, 
+# This code effectively deletes an item at a specified index from a list,
 # if the index is within the valid range.
 
 def delete_at(my_list=[], idx=0):
