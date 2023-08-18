@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#Calculates the square matrix using lambda functions and the map function
 
 def square_matrix_simple(matrix=[]):
     new_matrix = matrix.copy()
@@ -8,4 +7,3 @@ def square_matrix_simple(matrix=[]):
         new_matrix[i] = list(map(lambda x: x**2, matrix[i]))
 
     return (new_matrix)
-
