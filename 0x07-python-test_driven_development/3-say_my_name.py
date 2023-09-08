@@ -1,10 +1,11 @@
-#!/usr/bin/python3
-# 3-say_my_name.py
 
-"""function that prints 1st name & last name."""
+#!/usr/bin/python3
+
+"""This function is responsible for printing a name based on the arguments."""
+
 
 def say_my_name(first_name, last_name=""):
-    """Prints a name.
+    """Print a name.
 
     Args:
         first_name (str): The first name to print.
