@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Function is responsible for printing text with specific indentation rules."""
+"""This function is responsible for printing text"""
 
 
 def text_indentation(text):
