@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 
 """This function is responsible for printing a name based on the arguments."""
