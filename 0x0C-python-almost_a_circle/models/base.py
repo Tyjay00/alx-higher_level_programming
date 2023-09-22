@@ -9,7 +9,7 @@ import turtle
 class Base:
     """Base model.
 
-    This Represents the "base" for all other classes in project 0x0C*.
+    This class represents the "base" for all other classes in project 0x0C*.
 
     Private Class Attributes:
         __nb_object (int): Number of instantiated Bases.
@@ -31,7 +31,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """Return the JSON serialization of a list of dicts.
+        """Returns the JSON serialization of a list of dictionaries.
 
         Args:
             list_dictionaries (list): A list of dictionaries.
