@@ -9,7 +9,7 @@ import turtle
 class Base:
     """Base model.
 
-    This class serves as the foundation for all other classes in the project
+    This Represents the "base" for all other classes in project 0x0C*.
 
     Private Class Attributes:
         __nb_object (int): Number of instantiated Bases.
@@ -18,10 +18,10 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """Initialize a new Base object.
+        """Initialize a new Base.
 
         Args:
-            id (int): The identity of the new Base object.
+            id (int): The identity of the new Base.
         """
         if id is not None:
             self.id = id
@@ -31,13 +31,10 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """Convert a list of dictionaries to a JSON string.
+        """Return the JSON serialization of a list of dicts.
 
         Args:
             list_dictionaries (list): A list of dictionaries.
-
-        Returns:
-            str: A JSON representation of the input list of dictionaries.
         """
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
@@ -45,7 +42,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """Save a list of objects to a JSON file.
+        """Write the JSON serialization of a list of objects to a file.
 
         Args:
             list_objs (list): A list of inherited Base instances.
@@ -60,13 +57,12 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
-        """Deserialize a JSON string to a list of dictionaries.
+        """Return the deserialization of a JSON string.
 
         Args:
             json_string (str): A JSON str representation of a list of dicts.
-
         Returns:
-            If json_string is empty - an empty list.
+            If json_string is None or empty - an empty list.
             Otherwise - the Python list represented by json_string.
         """
         if json_string is None or json_string == "[]":
@@ -75,13 +71,10 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        """Create an instance of the class from a dictionary of attributes.
+        """Return a class instantied from a dictionary of attributes.
 
         Args:
             **dictionary (dict): Key/value pairs of attributes to initialize.
-
-        Returns:
-            Base: An instance of the class with attributes set from the dictionary.
         """
         if dictionary and dictionary != {}:
             if cls.__name__ == "Rectangle":
@@ -93,12 +86,13 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """Load a list of objects from a JSON file.
+        """Return a list of classes instantiated from a file of JSON strings.
 
         Reads from `<cls.__name__>.json`.
 
         Returns:
-            list: A list of instantiated classes.
+            If the file does not exist - an empty list.
+            Otherwise - a list of instantiated classes.
         """
         filename = str(cls.__name__) + ".json"
         try:
@@ -110,7 +104,7 @@ class Base:
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
-        """Save a list of objects to a CSV file.
+        """Write the CSV serialization of a list of objects to a file.
 
         Args:
             list_objs (list): A list of inherited Base instances.
@@ -130,12 +124,13 @@ class Base:
 
     @classmethod
     def load_from_file_csv(cls):
-        """Load a list of objects from a CSV file.
+        """Return a list of classes instantiated from a CSV file.
 
         Reads from `<cls.__name__>.csv`.
 
         Returns:
-            list: A list of instantiated classes.
+            If the file does not exist - an empty list.
+            Otherwise - a list of instantiated classes.
         """
         filename = cls.__name__ + ".csv"
         try:
@@ -189,5 +184,3 @@ class Base:
                 turt.forward(sq.height)
                 turt.left(90)
             turt.hideturtle()
-
-        turtle.exitonclick()
