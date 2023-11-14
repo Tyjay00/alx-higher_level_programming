@@ -1,12 +1,13 @@
 #!/usr/bin/node
 
-if (process.argv[2] === undefined || isNaN(process.argv[2])) {
+const occurrences = process.argv[2];
+
+if (occurrences === undefined || isNaN(occurrences)) {
   console.log('Missing number of occurrences');
 } else {
-  const x = Number(process.argv[2]);
-  let i = 0;
-  while (i < x) {
+  const count = Number(occurrences);
+
+  for (let i = 0; i < count; i++) {
     console.log('C is fun');
-    i++;
   }
 }
