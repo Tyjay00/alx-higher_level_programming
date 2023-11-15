@@ -31,13 +31,4 @@ If c is undefined, uses the character X.
 9-logme.js: JavaScript function printing the number of arguments already printed along with the new argument value.
 Output: <number arguments already printed>: <current argument value>
 10. Number conversion
-10-converter.js: JavaScript function converting a number from base 10 to another base passed as an argument.
-11. Factor index
-100-map.js: JavaScript script importing an array and creating a new array with each value equal to the value of the initial list times the index of the new list.
-Prints both the initial and new list.
-12. Sorted occurrences
-101-sorted.js: JavaScript script importing a dictionary of occurrences by user ID and computing a new dictionary of user ID's by occurrences.
-Prints the new dictionary.
-13. Concat files
-102-concat.js: JavaScript script concatenating two files passed as arguments into a file specified as the third argument.
-Usage: ./102-concat.js fileA fileB fileC.
+10-converter.js: JavaScript function converting a number from base 10 to another base passed as an argument..
