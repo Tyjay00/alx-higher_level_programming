@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" This script fetches all cities and their corresponding states from the database hbtn_0e_6_usa """
+"""Fetches all cities and their corresponding states from the database"""
 import sys
 from model_state import Base, State
 from model_city import City

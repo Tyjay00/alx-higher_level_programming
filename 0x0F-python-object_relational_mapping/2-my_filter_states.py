@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" This script fetches all states from the database hbtn_0e_0_usa that match a given name """
+"""fetches all states from the database hbtn_0e_0_usa that match a given name"""
 import MySQLdb
 import sys
 

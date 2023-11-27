@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" This script establishes a link between a class and a table in the database, and then queries the table """
+""" This script starts a link between a class and a table in the database"""
 import sys
 from model_state import Base, State
 from sqlalchemy import (create_engine)

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" This script updates the name of the State object with id 2 to 'New Mexico' in the database hbtn_0e_6_usa """
+""" This script updates the name of the State object to 'New Mexico'"""
 import sys
 from model_state import Base, State
 from sqlalchemy import (create_engine)

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" This script fetches all states starting with 'N' from the database hbtn_0e_0_usa """
+"""Fetches all states starting with 'N' from the database hbtn_0e_0_usa"""
 import MySQLdb
 import sys
 

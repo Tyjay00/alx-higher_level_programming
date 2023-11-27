@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" This script fetches all State objects from the database hbtn_0e_6_usa that contain the letter 'a' """
+"""Lists State objects from the database hbtn_0e_6_usa with letter 'a' """
 import sys
 from model_state import Base, State
 from sqlalchemy import (create_engine)
