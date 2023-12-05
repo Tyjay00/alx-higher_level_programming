@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""Fetches a URL using urllib"""
-
-
+"""Fetches https://alx-intranet.hbtn.io/status using urllib"""
 
 
 if __name__ == '__main__':
@@ -13,4 +11,3 @@ if __name__ == '__main__':
         print("\t- type: {}".format(type(content)))
         print("\t- content: {}".format(content))
         print("\t- utf8 content: {}".format(content.decode('utf-8')))
-
