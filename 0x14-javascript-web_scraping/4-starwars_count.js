@@ -1,6 +1,5 @@
 #!/usr/bin/node
-//This is a Node.js script that fetches data from an API and processes the response.
-
+// fetches data from an API and processes the response.
 const request = require('request');
 request(process.argv[2], function (error, response, body) {
   if (!error) {
