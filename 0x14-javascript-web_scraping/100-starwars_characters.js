@@ -1,7 +1,5 @@
 #!/usr/bin/node
-//This is a Node.js script that fetches data from the Star Wars API (SWAPI) 
-//and prints the names of characters in a specific film. 
-
+//prints the names of characters in a specific film.
 const req = require('request');
 const id = process.argv[2];
 const url = 'https://swapi-api.hbtn.io/api/films/';
