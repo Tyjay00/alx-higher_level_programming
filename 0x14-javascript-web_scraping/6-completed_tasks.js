@@ -1,6 +1,5 @@
 #!/usr/bin/node
-// fetches data from a given URL and processes the response
-
+// fetches data from a given URL and processes the response.
 const request = require('request');
 const url = process.argv[2];
 
