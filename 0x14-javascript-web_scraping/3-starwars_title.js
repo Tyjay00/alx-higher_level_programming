@@ -1,6 +1,5 @@
 #!/usr/bin/node
-//This is a Node.js script that fetches data from the Star Wars API (SWAPI)
-
+// fetches data from the Star Wars API (SWAPI)
 const request = require('request');
 const episodeNum = process.argv[2];
 const API_URL = 'https://swapi-api.hbtn.io/api/films/';
