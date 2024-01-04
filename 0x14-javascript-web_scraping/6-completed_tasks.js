@@ -1,5 +1,4 @@
 #!/usr/bin/node
-//fetches data from a given URL
 
 const request = require('request');
 const url = process.argv[2];
