@@ -1,5 +1,6 @@
 #!/usr/bin/node
 //fetches data from a given URL
+
 const request = require('request');
 const url = process.argv[2];
 
@@ -24,4 +25,3 @@ request(url, function (err, response, body) {
     console.log('An error occured. Status code: ' + response.statusCode);
   }
 });
-
